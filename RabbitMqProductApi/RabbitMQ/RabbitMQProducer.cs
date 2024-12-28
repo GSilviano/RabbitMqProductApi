@@ -15,7 +15,7 @@ namespace RabbitMqProductApi.RabbitMQ
                 HostName = "localhost"
             };
 
-            //Create the RabbitMQ connection using connection factory details as i mentioned above
+            //Create the RabbitMQ connection using connection factory details
             var connection = await factory.CreateConnectionAsync();
             //Here we create channel with session and model
             using

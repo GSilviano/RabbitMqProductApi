@@ -1,12 +1,13 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
-//Here we specify the Rabbit MQ Server. we use rabbitmq docker image and use it
+
+//Specify the Rabbit MQ Server. use rabbitmq docker image and use it
 var factory = new ConnectionFactory
 {
     HostName = "localhost"
 };
-//Create the RabbitMQ connection using connection factory details as i mentioned above
+//Create the RabbitMQ connection using connection factory details
 var connection = await factory.CreateConnectionAsync();
 //Here we create channel with session and model
 using
